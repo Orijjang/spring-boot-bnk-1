@@ -221,7 +221,8 @@ a {
 }
 
 .fxguide-sidebar nav {
-  display: block;
+  display: grid;
+  gap: 20px;
 }
 
 .fxguide-category {
@@ -230,15 +231,11 @@ a {
   padding: 0;
 }
 
-.fxguide-category > li {
-  margin-bottom: 22px;
-}
-
-.fxguide-section {
-  display: block;
-  font-size: 15px;
-  font-weight: 600;
-  color: #22304E;
+.fxguide-group-title {
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #7b8798;
   margin-bottom: 10px;
 }
 
@@ -247,24 +244,28 @@ a {
   margin: 0;
   padding: 0 0 0 10px;
   display: grid;
-  gap: 6px;
+  gap: 8px;
+  padding-left: 0;
 }
 
 .fxguide-subcategory a {
   display: block;
-  padding: 6px 4px;
-  color: #555;
-  font-size: 13.5px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #222;
+  font-size: 14px;
   font-weight: 500;
-  transition: color 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
-.fxguide-subcategory a:hover,
-.fxguide-subcategory a:focus {
+.fxguide-link-list a:hover,
+.fxguide-link-list a:focus {
+  background: #f0f4ff;
   color: #2C5DE5;
 }
 
-.fxguide-subcategory li.active a {
+.fxguide-link-list a.active {
+  background: #e7edff;
   color: #2C5DE5;
   font-weight: 700;
 }
