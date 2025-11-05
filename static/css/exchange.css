@@ -335,9 +335,15 @@ footer {
 
 /* hover */
 .exchange-category > li > a:hover {
-  color: #2C5DE5; /* ✅ 통일된 active/hover color */
+  color: #2C5DE5; /* ✅ hover 시 파란색 */
 }
 
+/* active */
+.exchange-category li.active > a,
+.exchange-subcategory li.active > a {
+  color: #2C5DE5; /* ✅ 현재 페이지 표시 */
+  font-weight: 700;
+}
 /* 세부 카테고리 */
 .exchange-subcategory {
   list-style: none;
