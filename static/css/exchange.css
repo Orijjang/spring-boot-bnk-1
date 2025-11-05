@@ -437,3 +437,52 @@ footer {
   color: #777;
   line-height: 1.6;
 }
+
+
+/* ------------------------------------
+   🔹 콘텐츠 문단 구분 및 여백 스타일
+------------------------------------ */
+
+/* 섹션 내부 h3 제목 (번호 있는 문단 제목용) */
+.exchange-content h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #22304E;
+  margin-top: 35px;   /* 위쪽 여백 */
+  margin-bottom: 15px; /* 아래쪽 여백 */
+}
+
+/* 목록 간 간격 및 들여쓰기 */
+.exchange-content ul {
+  margin-left: 20px;
+  margin-bottom: 25px;  /* 각 섹션 간 여백 */
+  line-height: 1.8;
+  color: #444;
+}
+
+/* 리스트 아이템 들여쓰기와 구분감 */
+.exchange-content ul li {
+  margin-bottom: 6px;
+}
+
+/* 안내문 (※ 참고 문구) 스타일 */
+.exchange-note {
+  background: #f9fafc;
+  border: 1px solid #e0e4eb;
+  border-radius: 8px;
+  padding: 14px 18px;
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+  margin-top: 25px;
+}
+
+/* 문단 전체 구역 감싸기 (선택사항: 박스 형태로 보이게) */
+.exchange-box {
+  background: #fff;
+  border: 1px solid #e6e9ef;
+  border-radius: 10px;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.04);
+}
