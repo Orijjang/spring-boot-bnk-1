@@ -239,6 +239,8 @@ a {
   color: #222;
   font-size: 15px;
   font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .fxguide-category .fxguide-section:hover,
