@@ -18,13 +18,11 @@ body {
   line-height: 1.6;
 }
 
-a {
-  color: inherit;
-}
-
 /* ------------------------------------
    🔹 상단 헤더 영역 (top-bar + main-nav)
 ------------------------------------ */
+
+/* 상단 탑바 */
 .top-bar {
   background: #fafafa;
   border-bottom: 1px solid #ddd;
@@ -36,19 +34,14 @@ a {
 }
 
 .top-bar ul {
-  list-style: none;
   display: flex;
   gap: 20px;
+  list-style: none;
 }
 
 .top-bar a {
   text-decoration: none;
   color: #555;
-  transition: color 0.2s ease;
-}
-
-.top-bar a:hover {
-  color: #4A6FA5;
 }
 
 .right-menu {
@@ -68,6 +61,7 @@ a {
   color: #4A6FA5;
 }
 
+/* 메인 네비게이션 */
 .main-nav {
   display: flex;
   align-items: center;
@@ -82,11 +76,14 @@ a {
   height: 40px;
 }
 
+/* NAV 메뉴 */
 .nav-menu {
-  list-style: none;
   display: flex;
+  list-style: none;
   gap: 40px;
+  position: relative;
   margin: 0;
+  padding: 0;
 }
 
 .nav-menu > li {
@@ -102,28 +99,11 @@ a {
   transition: color 0.2s ease;
 }
 
-.nav-menu > li > a:hover,
-.nav-menu > li > a:focus {
+.nav-menu > li > a:hover {
   color: #4A6FA5;
 }
 
-.nav-icons {
-  display: flex;
-  gap: 22px;
-  align-items: center;
-}
-
-.nav-icons a {
-  color: #333;
-  font-size: 18px;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.nav-icons a:hover {
-  color: #4A6FA5;
-}
-
+/* 드롭다운 메뉴 */
 .dropdown {
   position: absolute;
   top: 100%;
@@ -148,6 +128,7 @@ a {
   transform: translateX(-50%) translateY(0);
 }
 
+/* 드롭다운 - 컬럼 */
 .menu-column {
   min-width: 180px;
 }
@@ -169,6 +150,7 @@ a {
   color: #4A6FA5;
 }
 
+/* 드롭다운 - 하위 목록 */
 .menu-column ul {
   list-style: none;
   margin: 0;
@@ -188,6 +170,24 @@ a {
 }
 
 .menu-column li a:hover {
+  color: #4A6FA5;
+}
+
+/* 폰트어썸 네비 아이콘 */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav-icons a {
+  color: #333;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-icons a:hover {
   color: #4A6FA5;
 }
 
@@ -491,8 +491,13 @@ a {
 }
 
 /* ------------------------------------
-   🔹 푸터
+   🔹 푸터 영역
 ------------------------------------ */
+
+footer {
+  margin-top: 60px;
+}
+
 .footer {
   background: #f8f8f8;
   border-top: 1px solid #e5e5e5;
@@ -505,9 +510,9 @@ a {
   color: #333;
   font-size: 14px;
   line-height: 1.8;
-  margin-top: 60px;
 }
 
+/* 푸터 링크 */
 .footer-links {
   margin-bottom: 25px;
   text-align: center;
@@ -523,6 +528,7 @@ a {
   text-decoration: underline;
 }
 
+/* 로고 + 저작권 */
 .footer-info {
   display: flex;
   flex-direction: column;
@@ -547,6 +553,7 @@ a {
   color: #666;
 }
 
+/* 고객센터 연락처 */
 .footer-right p {
   margin: 3px 0;
   font-size: 14px;
@@ -557,6 +564,7 @@ a {
   font-weight: 700;
 }
 
+/* 하단 버튼 */
 .footer-bottom-nav {
   display: flex;
   justify-content: center;
@@ -565,7 +573,7 @@ a {
   margin-top: 20px;
 }
 
-.footer-bottom-nav .bottom-item {
+.bottom-item {
   background: #fff;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -574,9 +582,9 @@ a {
   transition: background 0.2s ease, box-shadow 0.2s ease;
 }
 
-.footer-bottom-nav .bottom-item:hover {
+.bottom-item:hover {
   background: #f1f1f1;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
 }
 
 /* ------------------------------------
